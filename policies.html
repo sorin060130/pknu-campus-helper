@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>복지정책 · 복지온</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="./styles.css"></head>
+<body>
+  <header class="site-header"><a class="brand" href="./index.html"><span class="brand-mark">온</span><span>복지온</span></a><button class="menu-button" aria-label="메뉴 열기">☰</button><nav class="nav"><a href="./index.html">홈</a><a class="active" href="./policies.html">복지정책</a><a href="./notices.html">공지사항</a><a class="admin-link hidden" href="./admin.html">공지 등록</a><a class="nav-login" href="./login.html">로그인</a><button class="nav-logout hidden">로그아웃</button></nav></header>
+  <main>
+    <section class="page-hero"><p class="eyebrow">복지정책</p><h1>정책은 알기 쉽게, 신청은 간편하게</h1><p>대상과 생활 여건에 맞는 사회복지 지원을 찾아보세요.</p></section>
+    <section class="section policy-layout">
+      <aside class="filter-panel"><h3>정책 분야</h3><button class="filter active" data-filter="all">전체 정책</button><button class="filter" data-filter="elderly">어르신 복지</button><button class="filter" data-filter="family">가족 지원</button><button class="filter" data-filter="children">아동·청소년</button><button class="filter" data-filter="employment">고용 지원</button><button class="filter" data-filter="health">의료 지원</button></aside>
+      <div class="policy-content">
+        <div class="search-box"><span>⌕</span><input id="policy-search" placeholder="정책명 또는 키워드 검색"></div>
+        <div id="policy-grid" class="policy-grid">
+          <article class="policy-card" id="elderly" data-category="elderly"><span class="tag coral-tag">어르신 복지</span><h3>기초연금 지원</h3><p>소득인정액 기준을 충족하는 만 65세 이상 어르신의 안정적인 노후생활을 지원합니다.</p><div class="policy-meta"><span>대상: 만 65세 이상</span><span>매월 지급</span></div><a href="#">신청 조건 보기 →</a></article>
+          <article class="policy-card" data-category="elderly health"><span class="tag coral-tag">어르신 복지</span><h3>노인맞춤돌봄서비스</h3><p>일상생활이 어려운 어르신에게 안전 확인, 생활교육과 외출 동행 등 맞춤형 돌봄을 제공합니다.</p><div class="policy-meta"><span>대상: 돌봄이 필요한 어르신</span><span>맞춤형 서비스</span></div><a href="#">신청 조건 보기 →</a></article>
+          <article class="policy-card" id="family" data-category="family"><span class="tag blue-tag">가족 지원</span><h3>긴급복지 생계지원</h3><p>갑작스러운 위기 상황으로 생계유지가 어려운 가구에 생계비와 필요한 복지 서비스를 지원합니다.</p><div class="policy-meta"><span>대상: 위기가구</span><span>소득·재산 심사</span></div><a href="#">신청 조건 보기 →</a></article>
+          <article class="policy-card" id="children" data-category="children family"><span class="tag yellow-tag">아동·청소년</span><h3>아동수당</h3><p>아동 양육에 따른 경제적 부담을 줄이고 건강한 성장 환경을 조성할 수 있도록 지원합니다.</p><div class="policy-meta"><span>대상: 만 8세 미만 아동</span><span>매월 지급</span></div><a href="#">신청 조건 보기 →</a></article>
+          <article class="policy-card" id="employment" data-category="employment"><span class="tag green-tag">고용 지원</span><h3>국민내일배움카드</h3><p>취업과 직무 역량 향상에 필요한 직업훈련 비용을 지원하여 구직과 경력 개발을 돕습니다.</p><div class="policy-meta"><span>대상: 구직자·근로자</span><span>훈련비 지원</span></div><a href="#">신청 조건 보기 →</a></article>
+          <article class="policy-card" id="health" data-category="health family"><span class="tag purple-tag">의료 지원</span><h3>재난적의료비 지원</h3><p>과도한 의료비 지출로 경제적 어려움을 겪는 가구에 의료비 일부를 지원합니다.</p><div class="policy-meta"><span>대상: 의료비 부담 가구</span><span>심사 후 지원</span></div><a href="#">신청 조건 보기 →</a></article>
+        </div>
+        <p id="policy-empty" class="empty-state hidden">검색 조건에 맞는 정책이 없습니다. 다른 키워드로 검색해 보세요.</p>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="./index.html"><span class="brand-mark">온</span><span>복지온</span></a><p>더 따뜻하고 가까운 사회복지 서비스를 만듭니다.</p><span>© 2026 복지온 사회복지 서비스 플랫폼</span></footer>
+  <script type="module" src="./shared.js"></script><script src="./policies.js"></script>
+</body></html>
